@@ -43,6 +43,24 @@ var spawn_schedule: Array = []
 var _section_flags: Array = []   # one bool per intensity sample: true = intense
 var _section_hz := 20.0
 
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	# 1. Grab the path saved by the menu from SceneManager
+	var path = SceneManager.getLoadpath()
+	
+	# 2. If a path was provided, override the default hardcoded path
+	if not path.is_empty():
+		data_file_path = path
+	
+	# 3. Automatically process the song data as soon as the scene loads
+	_processSong()
+	
+	# Optional: If you want the audio stream itself to match the selected song:
+	# (Assumes your json path is like "res://songs/SongName.analysis.json" and your audio is ".mp3")
+	var audio_path = data_file_path.trim_suffix(".analysis.json") + ".mp3"
+	if FileAccess.file_exists(audio_path):
+		stream = load(audio_path)
+		play()
 
 func load_json_file(filePath: String) -> Dictionary:
 	if FileAccess.file_exists(filePath):
@@ -58,7 +76,7 @@ func load_json_file(filePath: String) -> Dictionary:
 	return {}
 
 
-func _ready() -> void:
+func _processSong() -> void:
 	song_data = load_json_file(data_file_path)
 	if song_data.has("beats") and song_data.has("onsets"):
 		is_loaded = true

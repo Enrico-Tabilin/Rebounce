@@ -2,15 +2,11 @@ extends Node
 
 var loadpath = ""
 
-# Called when the node enters the scene tree for the first time.
-func _change_scene_amd_call(scene_path: String, loadpath : String):
-	get_tree().call_deferred(scene_path, loadpath)
+func change_scene(scene_path: String) -> void:
+	get_tree().change_scene_to_file(scene_path)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func setLoadpath(string : String):
+func setLoadpath(string: String) -> void:
 	loadpath = string
-	pass
 	
-func getLoadpath():
+func getLoadpath() -> String:
 	return loadpath

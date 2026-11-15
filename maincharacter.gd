@@ -41,6 +41,7 @@ func takeDamage(num : int, immune : Array) -> void:
 	health_changed.emit(health, MAX_HEALTH)
 	if health <= 0:
 		died.emit()
+		SceneManager.change_scene("res://mwnu.tscn")
 		health = 3
 	pass
 

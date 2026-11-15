@@ -28,6 +28,19 @@ var song = {
 	10 : ["res://songs/It's me, It's Verity - Horror Skunx"]
 }
 
+var json = {
+	1 : ["res://songs/BIRDBRAIN By Jamie Paige.analysis.json"],
+	2 : ["res://songs/BTS Butter.analysis.json"],
+	3 : ["res://songs/Flower Man Toby Fox & CamelliaOfficial.analysis.json"],
+	4 : ["res://songs/The Gummy Bear Song.analysis.json"],
+	5 : ["res://songs/Mozart's Symphony no 40 - 1st movement.analysis.json"],
+	6 : ["res://songs/KORDHELL - MURDER IN MY MIND.analysis.json"],
+	7 : ["res://songs/t.A.T.u. - Я сошла с ума.analysis.json"],
+	8 : ["res://songs/Taylor Swift - Blank Space.analysis.json"],
+	9 : ["res://songs/I Wanna Rock by Twisted Sisters.analysis.json"],
+	10 : ["res://songs/It's me, It's Verity - Horror Skunx.analysis.json"]
+}
+
 var desc = {
 	1 : "Jamie Paige - BIRDBRAIN (Explicit)",
 	2 : "BTS - Butter",
@@ -108,5 +121,6 @@ func indexChanged() -> void:
 	pass
 
 func _on_music_play_pressed() -> void:
-	SceneManager.change_scene_and_call("res://main.tscn", "_processSong")
+	SceneManager.setLoadpath(json[albumIndex][0])
+	SceneManager.change_scene("res://main.tscn")
 	pass # Replace with function body.

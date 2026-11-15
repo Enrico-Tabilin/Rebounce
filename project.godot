@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="Rebounce"
-run/main_scene="uid://jm6p8vxk21bb"
+run/main_scene="uid://bwgri88mj4n4h"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Hitbox="*uid://xgogdet43reu"
-Scenemanager="*uid://d01d47qnryrbg"
+SceneManager="*uid://d01d47qnryrbg"
 
 [display]
 
