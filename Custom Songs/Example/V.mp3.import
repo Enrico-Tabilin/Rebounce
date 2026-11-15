@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dy4lmarn0rifm"
+path="res://.godot/imported/V.mp3-418942bcb4088c5fd0746d6b8115b61b.mp3str"
+
+[deps]
+
+source_file="res://Custom Songs/Example/V.mp3"
+dest_files=["res://.godot/imported/V.mp3-418942bcb4088c5fd0746d6b8115b61b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

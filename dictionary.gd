@@ -107,6 +107,6 @@ func indexChanged() -> void:
 	$Desc.text = desc[albumIndex]
 	pass
 
-func _on_musicplay_pressed() -> void:
-	
-	pass
+func _on_music_play_pressed() -> void:
+	SceneManager.change_scene_and_call("res://main.tscn", "_processSong")
+	pass # Replace with function body.
