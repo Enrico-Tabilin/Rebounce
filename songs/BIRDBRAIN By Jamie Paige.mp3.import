@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7ovqm2mxfr4c"
+path="res://.godot/imported/BIRDBRAIN By Jamie Paige.mp3-ca5ac05c50b222066d6e0cb428d8a273.mp3str"
+
+[deps]
+
+source_file="res://songs/BIRDBRAIN By Jamie Paige.mp3"
+dest_files=["res://.godot/imported/BIRDBRAIN By Jamie Paige.mp3-ca5ac05c50b222066d6e0cb428d8a273.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

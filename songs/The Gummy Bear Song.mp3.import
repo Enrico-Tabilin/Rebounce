@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3u8xegk3dwh"
+path="res://.godot/imported/The Gummy Bear Song.mp3-9a7b05b7f56a4f7419884edfcc8937ed.mp3str"
+
+[deps]
+
+source_file="res://songs/The Gummy Bear Song.mp3"
+dest_files=["res://.godot/imported/The Gummy Bear Song.mp3-9a7b05b7f56a4f7419884edfcc8937ed.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

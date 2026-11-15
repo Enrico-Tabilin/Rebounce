@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://daoe3goee008o"
+path="res://.godot/imported/I Wanna Rock by Twisted Sisters.mp3-c93b4c5c28b7e4cd40491866e7ea3bd4.mp3str"
+
+[deps]
+
+source_file="res://songs/I Wanna Rock by Twisted Sisters.mp3"
+dest_files=["res://.godot/imported/I Wanna Rock by Twisted Sisters.mp3-c93b4c5c28b7e4cd40491866e7ea3bd4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

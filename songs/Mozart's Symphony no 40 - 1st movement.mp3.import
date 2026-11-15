@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbmovqtbv5t1a"
+path="res://.godot/imported/Mozart's Symphony no 40 - 1st movement.mp3-c38a14c3d0bba288fe3f53291f29813d.mp3str"
+
+[deps]
+
+source_file="res://songs/Mozart's Symphony no 40 - 1st movement.mp3"
+dest_files=["res://.godot/imported/Mozart's Symphony no 40 - 1st movement.mp3-c38a14c3d0bba288fe3f53291f29813d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

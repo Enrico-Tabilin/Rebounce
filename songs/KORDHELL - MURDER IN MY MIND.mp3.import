@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwk5qs8avoj3"
+path="res://.godot/imported/KORDHELL - MURDER IN MY MIND.mp3-66fd8a0b56abc1f71550f29503fe7841.mp3str"
+
+[deps]
+
+source_file="res://songs/KORDHELL - MURDER IN MY MIND.mp3"
+dest_files=["res://.godot/imported/KORDHELL - MURDER IN MY MIND.mp3-66fd8a0b56abc1f71550f29503fe7841.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

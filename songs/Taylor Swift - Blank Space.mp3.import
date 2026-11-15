@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bb7jwrj0t8hp2"
+path="res://.godot/imported/Taylor Swift - Blank Space.mp3-0b9dc5947cb0b70a7df0fd4a36f61864.mp3str"
+
+[deps]
+
+source_file="res://songs/Taylor Swift - Blank Space.mp3"
+dest_files=["res://.godot/imported/Taylor Swift - Blank Space.mp3-0b9dc5947cb0b70a7df0fd4a36f61864.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

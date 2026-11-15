@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://bwgri88mj4n4h"]
+
+[ext_resource type="Script" uid="uid://c73y2wp2b0ky8" path="res://dictionary.gd" id="1_4c57u"]
+[ext_resource type="AudioStream" uid="uid://p5jj5sq84h1e" path="res://songs/Kether Battle1.mp3" id="2_4c57u"]
+[ext_resource type="Texture2D" uid="uid://bf1cj1i2jvk5r" path="res://UI/Background.PNG" id="2_efxa6"]
+[ext_resource type="Texture2D" uid="uid://bkqi7akg2eht4" path="res://UI/title.PNG" id="3_dg77c"]
+[ext_resource type="Texture2D" uid="uid://dxd4jnjxvtc8s" path="res://UI/play.png" id="4_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://cui04y6xw4h1" path="res://UI/vinyl.png" id="5_w48qg"]
+[ext_resource type="Texture2D" uid="uid://q6a13fn8lxlu" path="res://UI/albumFrame.png" id="6_vivmo"]
+[ext_resource type="Texture2D" uid="uid://wky1mqnoyc67" path="res://UI/left.png" id="8_yaehf"]
+[ext_resource type="Texture2D" uid="uid://vnjg8da2d50t" path="res://UI/right.png" id="9_074og"]
+[ext_resource type="Texture2D" uid="uid://ctxj4orhcemqd" path="res://UI/musicPlay.png" id="10_cegan"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fy03j"]
+
+[node name="Node2D" type="Node2D" unique_id=1724849362]
+position = Vector2(640, 360)
+script = ExtResource("1_4c57u")
+
+[node name="Preview" type="AudioStreamPlayer" parent="." unique_id=459098589]
+stream = ExtResource("2_4c57u")
+autoplay = true
+parameters/looping = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1895867921]
+texture = ExtResource("2_efxa6")
+
+[node name="Title" type="Sprite2D" parent="." unique_id=347316343]
+position = Vector2(0, -165)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_dg77c")
+
+[node name="Play" type="TextureButton" parent="." unique_id=2142342174]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = 192.0
+offset_right = 128.0
+offset_bottom = 304.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("4_ycdy4")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Vinyl" type="Sprite2D" parent="." unique_id=1054571671]
+visible = false
+texture_filter = 1
+position = Vector2(0, -250)
+scale = Vector2(20, 20)
+texture = ExtResource("5_w48qg")
+
+[node name="AlbumFrame" type="Sprite2D" parent="." unique_id=1386755027]
+visible = false
+texture_filter = 1
+position = Vector2(0, -96)
+scale = Vector2(10, 10)
+texture = ExtResource("6_vivmo")
+
+[node name="Cover" type="Sprite2D" parent="." unique_id=1888943309]
+visible = false
+position = Vector2(0, -100)
+scale = Vector2(1.155, 1.155)
+
+[node name="Left" type="TextureButton" parent="." unique_id=1587348663]
+visible = false
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -264.0
+offset_top = -144.0
+offset_right = -168.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("8_yaehf")
+stretch_mode = 0
+
+[node name="Right" type="TextureButton" parent="." unique_id=376816488]
+visible = false
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 168.0
+offset_top = -144.0
+offset_right = 264.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("9_074og")
+stretch_mode = 0
+
+[node name="Desc" type="Label" parent="." unique_id=638783702]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = 65.0
+offset_right = 225.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_fy03j")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MusicPlay" type="TextureButton" parent="." unique_id=2007803951]
+visible = false
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = 256.0
+offset_right = 32.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("10_cegan")
+stretch_mode = 0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1924473859]
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="Right" to="." method="_on_right_pressed"]
