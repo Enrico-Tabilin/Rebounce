@@ -72,6 +72,8 @@ script = ExtResource("1_272bh")
 
 [node name="Slimey" parent="." unique_id=338320960 instance=ExtResource("1_ig7tw")]
 position = Vector2(7.3000183, -34.52501)
+z = null
+MAX_HEALTH = null
 
 [node name="Layer0" type="TileMapLayer" parent="." unique_id=2083366392]
 z_index = -2
