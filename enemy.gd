@@ -36,7 +36,7 @@ func _doDamage(body: Node2D):
 		return
 		
 	print("Hit registered on: ", body.name)
-	if body.has_method("takeDamage"):
+	if body.has_method("takeDamage") and not body.is_in_group("enemies"):
 		body.takeDamage(1, [])
 
 func _isGuarding() -> bool:

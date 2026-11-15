@@ -38,7 +38,7 @@ func takeDamage(num : int, immune : Array) -> void:
 	if immune.find("Charging") and isCharging:
 		return
 	health -= num
-	health_changed.emit(health, MAX_HEALTH)
+	health_changed.emit(health, MAX_HEALTH or 3)
 	if health <= 0:
 		died.emit()
 		SceneManager.change_scene("res://menu.tscn")
@@ -118,6 +118,8 @@ func _bounce_upwards() -> void:
 	velocity += endVelocity
 
 func _pushOutOfSolids() -> void:
+	if not get_tree():
+		return
 	for node in get_tree().get_nodes_in_group("enemies"):
 		var enemy := node as Enemy
 		if enemy == null or not enemy.isCollideable:
